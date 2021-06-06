@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>maps!</title>
+    <title>place holder!</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-    <h1>i am a map</h1>
+<body onload="renderUserSettings()">
+
+    <h1>welcome to place holder!</h1>
+    <div class="links">
+        <a href="user-prefs.html">click here to change preferences </a>
+        <a href="index.html">click here to go back to home page! </a>
+
+    </div>
+    <div id="map" onclick="mapClicked()"></div>
+    <button class="btn" onclick="positonButtonClicked()">My Location</button>
+    <button class="btn" onclick="toggleTable()">My Places</button>
+
+
+    <table class="places-table">
+        <thead>
+            <td>Name</td>
+            <td>Actions</td>
+        </thead>
+        <tbody class="locations-list"></tbody>
+    </table>
+    <script src="js/storage-services.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJUNAY5e9wCXW6MvoESH4N-WI0uNTm1zo&callback=initMap" ; async></script>
+    <script src="js/place-services.js"></script>
+    <script src="js/utils-service.js"></script>
+    <script src="js/user-pref-services.js"></script>
+    <script src="js/controller.js"></script>
+
+
 </body>
 
 </html>

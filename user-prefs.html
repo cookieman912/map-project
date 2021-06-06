@@ -10,16 +10,20 @@
 </head>
 
 <body onload="renderUserSettings()">
-    <a href="index.html">click here to go back to homepage </a>
+    <div class="links">
+        <a href="user-prefs.html">click here to change preferences </a>
+        <a href="maps.html">click here to go to maps </a>
+
+    </div>
     <form onsubmit="submitForm(event)">
         <label for="background color"> choose your prefered background color</label>
-        <input type="color" id="background-color" name="background-color"  />
-        
+        <input type="color" id="background-color" name="background-color" />
+
 
         <label for="text-color"> choose your prefered text color</label>
         <input type="color" id="text-color" name="text-color" />
         <label for="birthday"> select your birthday!</label>
-        <input type="date" id="birthday"> 
+        <input type="date" id="birthday">
         <input type="submit" id="submission">
     </form>
 
