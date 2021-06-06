@@ -1,0 +1,9 @@
+*{box-sizing: border-box;
+    text-align: center;
+}
+
+input{display: block;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw\
+   }

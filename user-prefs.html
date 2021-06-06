@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user preference</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body onload="renderUserSettings()">
+    <a href="index.html">click here to go back to homepage </a>
+    <form onsubmit="submitForm(event)">
+        <label for="background color"> choose your prefered background color</label>
+        <input type="color" id="background-color" name="background-color"  />
+        
+
+        <label for="text-color"> choose your prefered text color</label>
+        <input type="color" id="text-color" name="text-color" />
+        <label for="birthday"> select your birthday!</label>
+        <input type="date" id="birthday"> 
+        <input type="submit" id="submission">
+    </form>
+
+    <script src="js/storage-services.js"></script>
+    <script src="js/user-pref-services.js"></script>
+    <script src="js/controller.js"></script>
+
+
+</body>
+
+</html>
